@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task meter</title>
+    <!-- Tailwind Css & Daisy Ui  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- CSS file added -->
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <header class="w-[1152px] mx-auto">
+      <nav class="flex justify-between bg-slate-50 p-4 rounded-md">
+        <div class="flex items-center gap-1">
+          <img src="Image/logo.png" alt="" />
+          <p class="text-[30px]">Dev<span class="font-bold">Board</span></p>
+        </div>
+        <button id="back-btn" class="btn btn-primary font-bold text-white">
+          Back To Dask
+        </button>
+      </nav>
+    </header>
+    <main class="w-[1152px] mx-auto">
+      <h1 class="text-[40px] font-bold text-center mb-6">BLOG</h1>
+      <div class="collapse bg-base-100 border border-base-300 mb-5">
+        <input type="radio" name="my-accordion-1" checked="checked" />
+        <div class="collapse-title font-bold">
+          Question-1: What are the different ways to select an element in the
+          DOM?
+        </div>
+        <div class="text-md p-4">
+          6 Ways to select element 01. document.getElimentById() 02.
+          document.getElimentsByClassName() 03. document.querySelector() 04.
+          document.querySelectorAll() 05. document.getElimentsByTagName()
+          06.document.getElimentsByName()
+        </div>
+      </div>
+
+      <div class="collapse bg-base-100 border border-base-300 mb-5">
+        <input type="radio" name="my-accordion-1" />
+        <div class="collapse-title font-bold">
+          Question-2: What is the difference between innerHTML, innerText, and
+          textContent ?
+        </div>
+        <div class="p-4 text-md">
+          01. innerHTML :- Gets or sets the HTML content of an element 02.
+          innerText :- Gets or sets the visible text content 03. textContent :-
+          Gets or sets the text content
+        </div>
+      </div>
+
+      <div class="collapse bg-base-100 border border-base-300 mb-5">
+        <input type="radio" name="my-accordion-1" />
+        <div class="collapse-title font-bold">
+          Question-3: What is event delegation in the DOM?
+        </div>
+        <div class="text-md p-4">
+          Event delegation is a technique in the DOM where a parent element
+          handles events for its child elements.
+        </div>
+      </div>
+
+      <div class="collapse bg-base-100 border border-base-300 mb-5">
+        <input type="radio" name="my-accordion-1" />
+        <div class="collapse-title font-bold">
+          Question-4: What is event bubbling in the DOM?
+        </div>
+        <div class="text-md p-4">
+          Event bubbling is a DOM mechanism where an event starts from the
+          target element
+        </div>
+      </div>
+
+      <div class="collapse bg-base-100 border border-base-300 mb-5">
+        <input type="radio" name="my-accordion-1" />
+        <div class="collapse-title font-bold">
+          Question-5: How do you create, add, and remove elements using
+          JavaScript?
+        </div>
+        <div class="text-md p-4">
+          01. Create Element : document.createEliment(); 02. classlist.add() 03.
+          classlist.remove()
+        </div>
+      </div>
+    </main>
+
+    <script src="js/blog.js"></script>
+  </body>
+</html>
