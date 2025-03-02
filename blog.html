@@ -3,28 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task meter</title>
-    <!-- Tailwind Css & Daisy Ui  -->
+    <title>DevBoard</title>
+    <!-- Daisy Ui  -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
       rel="stylesheet"
       type="text/css"
     />
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    <!-- CSS file added -->
+    <!-- Style.CSS -->
     <link rel="stylesheet" href="style/style.css" />
   </head>
-  <body>
+  <body class="bg-[#F4F7FF]">
     <header class="w-[1152px] mx-auto">
-      <nav class="flex justify-between bg-slate-50 p-4 rounded-md">
+      <nav class="flex justify-between bg-white p-4 rounded-md">
         <div class="flex items-center gap-1">
           <img src="Image/logo.png" alt="" />
           <p class="text-[30px]">Dev<span class="font-bold">Board</span></p>
         </div>
-        <button id="back-btn" class="btn btn-primary font-bold text-white">
+        <a href="index.html"><button id="back-btn" class="btn btn-primary font-bold text-white">
           Back To Dask
-        </button>
+        </button></a>
       </nav>
     </header>
     <main class="w-[1152px] mx-auto">
@@ -36,13 +41,10 @@
           DOM?
         </div>
         <div class="text-md p-4">
-          6 Ways to select element 01. document.getElimentById() 02.
-          document.getElimentsByClassName() 03. document.querySelector() 04.
-          document.querySelectorAll() 05. document.getElimentsByTagName()
-          06.document.getElimentsByName()
+          Six Methods for Choosing an Element 1. getElimentById() in document 2. getElimentsByClassName() in document 3. querySelector() in document 4. querySelectorAll() in document 5. getElimentsByTagName() in document GetElimentsByName() in 6.document
         </div>
       </div>
-
+      <!-- .. -->
       <div class="collapse bg-base-100 border border-base-300 mb-5">
         <input type="radio" name="my-accordion-1" />
         <div class="collapse-title font-bold">
@@ -50,34 +52,30 @@
           textContent ?
         </div>
         <div class="p-4 text-md">
-          01. innerHTML :- Gets or sets the HTML content of an element 02.
-          innerText :- Gets or sets the visible text content 03. textContent :-
-          Gets or sets the text content
+          1. innerText: Obtains or modifies the visible text content 2. innerHTML: Obtains or modifies an element's HTML content;
         </div>
       </div>
-
+      <!-- ... -->
       <div class="collapse bg-base-100 border border-base-300 mb-5">
         <input type="radio" name="my-accordion-1" />
         <div class="collapse-title font-bold">
           Question-3: What is event delegation in the DOM?
         </div>
         <div class="text-md p-4">
-          Event delegation is a technique in the DOM where a parent element
-          handles events for its child elements.
+          By adding an event listener to a parent element rather than to each individual child element, event delegation is a DOM technique that enables the parent to manage events for dynamically introduced child elements as well.
         </div>
       </div>
-
+      <!-- ... -->
       <div class="collapse bg-base-100 border border-base-300 mb-5">
         <input type="radio" name="my-accordion-1" />
         <div class="collapse-title font-bold">
           Question-4: What is event bubbling in the DOM?
         </div>
         <div class="text-md p-4">
-          Event bubbling is a DOM mechanism where an event starts from the
-          target element
+          By starting at the target element and propagating upward to its parent elements, event bubbling is a DOM mechanism that enables each parent element to handle the event unless it is stopped.
         </div>
       </div>
-
+      <!-- ... -->
       <div class="collapse bg-base-100 border border-base-300 mb-5">
         <input type="radio" name="my-accordion-1" />
         <div class="collapse-title font-bold">
@@ -85,12 +83,9 @@
           JavaScript?
         </div>
         <div class="text-md p-4">
-          01. Create Element : document.createEliment(); 02. classlist.add() 03.
-          classlist.remove()
+          Create Element : document.createEliment();
         </div>
       </div>
     </main>
-
-    <script src="js/blog.js"></script>
   </body>
 </html>

@@ -21,7 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
       button.style.cursor = "not-allowed";
       button.style.color = "#ffffff";
   
-      // Task Count Update
       let taskAssigned = parseInt(taskAssignedElement.innerText);
       let completedTask = parseInt(completedTaskElement.innerText);
       
